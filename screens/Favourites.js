@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
     flex: 1,
-    marginTop:40
   },
   list: {
     alignItems: 'center',

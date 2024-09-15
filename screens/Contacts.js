@@ -62,7 +62,7 @@ const Contacts = ({ navigation }) => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    //marginTop: 40, // Adjust this value as needed
+    marginTop: 40, // Adjust this value as needed
   },
   container: {
     flex: 1,

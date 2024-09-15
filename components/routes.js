@@ -156,46 +156,5 @@ const UserScreens = ({navigation}) =>
         </Stack.Navigator>
     )
 }
-const Tab = createMaterialBottomTabNavigator();
-const TabNavigation = () => {
-    return (
-        <NavigationContainer>
-            <Tab.Navigator
-                initialRouteName="ContactsScreens"
-                screenOptions={{
-                    tabBarStyle: { backgroundColor: colors.blue },
-                    tabBarActiveTintColor: colors.greyLight,
-                    tabBarInactiveTintColor: colors.greyDark,
-                    headerShown: false,  // Hide header for all screens in this navigator
-                    contentContainerStyle: { marginTop: 20 } // This is less common for tab screens
-                }}
-            >
-                <Tab.Screen
-                    name="ContactsScreens"
-                    component={ContactsScreens}
-                    options={{
-                        tabBarIcon: getTabBarIcon('list'),
-                        tabBarLabel: 'Contacts',
-                    }}
-                />
-                <Tab.Screen
-                    name="FavoritesScreens"
-                    component={FavoritesScreens}
-                    options={{
-                        tabBarIcon: getTabBarIcon('star'),
-                        tabBarLabel: 'Favorites',
-                    }}
-                />
-                <Tab.Screen
-                    name="UserScreens"
-                    component={UserScreens}
-                    options={{
-                        tabBarIcon: getTabBarIcon('person'),
-                        tabBarLabel: 'User',
-                    }}
-                />
-            </Tab.Navigator>
-        </NavigationContainer>
-    );
-};
-export default TabNavigation;
+
+export default DrawerNavigator;
